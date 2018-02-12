@@ -8,3 +8,6 @@
 /build
 /captures
 .externalNativeBuild
+
+## ObjectBox
+default.json.bak
