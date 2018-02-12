@@ -16,6 +16,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+
+    // need to manually include generated source
+    // investigate, BaseVariant#registerJavaGeneratingTask should already do this
+    sourceSets.main.java.srcDirs += 'build/generated/source/greendao'
 }
 
 dependencies {
