@@ -1,4 +1,5 @@
 apply plugin: 'com.android.feature'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 26
@@ -18,6 +19,7 @@ android {
 }
 
 dependencies {
+    api 'org.greenrobot:greendao:3.2.2'
     api 'com.android.support:appcompat-v7:26.1.0'
     api 'com.android.support.constraint:constraint-layout:1.0.2'
     application project(':app')
