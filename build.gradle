@@ -1,12 +1,11 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    ext.objectboxVersion = '1.4.2-instant-app-SNAPSHOT'
+    ext.objectboxVersion = '1.4.2'
     repositories {
         google()
         jcenter()
         maven { url "http://objectbox.net/beta-repo/" }
-        mavenLocal() // REMOVE ME
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.0.1'
@@ -22,7 +21,6 @@ allprojects {
         google()
         jcenter()
         maven { url "http://objectbox.net/beta-repo/" }
-        mavenLocal() // REMOVE ME
     }
 }
 
